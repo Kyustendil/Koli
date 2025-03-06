@@ -1,0 +1,19 @@
+CREATE DATABASE CarDatabase;
+
+USE CarDatabase;
+
+CREATE TABLE Cars (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    brand VARCHAR(50) NOT NULL,
+    model VARCHAR(50) NOT NULL,
+    color VARCHAR(30) NOT NULL,
+    img VARCHAR(255) -- Column for storing the image path (as a string)
+);
+
+INSERT INTO Cars (brand, model, color, img)
+VALUES
+('Toyota', 'Corolla', 'Red', 'images/toyota_corolla.jpg'),
+('Honda', 'Civic', 'Blue', 'images/honda_civic.jpg'),
+('Ford', 'Mustang', 'Black', 'images/ford_mustang.jpg'),
+('BMW', 'X5', 'White', 'images/bmw_x5.jpg'),
+('Audi', 'A4', 'Silver', 'images/audi_a4.jpg');
